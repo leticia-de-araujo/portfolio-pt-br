@@ -89,7 +89,7 @@ const About = () => {
                         "aprender novas tecnologias.",
                         "resolver problemas complexos.",
                         "arrumar bugs difíceis de resolver.",
-                        "experimentar coisas novas",
+                        "experimentar coisas novas.",
                         "colaborar com outras pessoas.",
                       ],
                       autoStart: true,
