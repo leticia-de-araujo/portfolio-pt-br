@@ -12,6 +12,8 @@ import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import Particles from "react-tsparticles";
 import particlesOptions from "../../particles.json";
 import { loadFull } from "tsparticles";
+import { IconButton } from "@mui/material";
+import LanguageIcon from "@mui/icons-material/Language";
 
 const Home = () => {
   const particlesInit = async (main) => {
@@ -20,6 +22,13 @@ const Home = () => {
 
   return (
     <HomeMainDiv name="home">
+      <Fade bottom duration={1000}>
+        <a href="https://portfolio-leticia.vercel.app/" className="language">
+          <IconButton>
+            EN <LanguageIcon sx={{ fontSize: "0.9rem" }} />
+          </IconButton>
+        </a>
+      </Fade>
       <Particles options={particlesOptions} init={particlesInit} />
       <div className="homeInnerDiv">
         <Fade bottom duration={1000}>

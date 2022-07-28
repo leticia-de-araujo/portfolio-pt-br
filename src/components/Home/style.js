@@ -9,6 +9,27 @@ export const HomeMainDiv = styled.div`
   height: calc(100vh + 67px);
   color: white;
 
+  .language {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    text-decoration: none;
+
+    button {
+      font-size: 0.9rem;
+      color: white;
+      display: flex;
+      gap: 3px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (min-width: 600px) {
+      top: 6px;
+      right: 6px;
+    }
+  }
+
   .homeInnerDiv {
     display: flex;
     flex-direction: column;

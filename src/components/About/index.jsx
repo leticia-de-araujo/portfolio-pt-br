@@ -8,6 +8,7 @@ import ProfilePic from "../../imgs/social/profilepic.png";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import Skills from "../Skills";
 
+
 const About = () => {
   return (
     <div name="about">

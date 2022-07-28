@@ -62,6 +62,7 @@ export const DivAbout = styled.div`
       background-color: #907ad6;
       align-self: center;
     }
+
   }
 
   .about-textAndSkills {
