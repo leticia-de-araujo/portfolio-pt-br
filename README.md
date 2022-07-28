@@ -6,4 +6,4 @@ Essa é apenas a primeira versão do meu portfólio, irei atualizá-lo constante
 
 Me inspirei no portfólio do Matthew Jigalin, que gentilmente disponibilizou o seu portfólio para inspiração.
 
-https://portfolio-leticia.vercel.app/
+https://portfolio-leticia-pt.vercel.app/
