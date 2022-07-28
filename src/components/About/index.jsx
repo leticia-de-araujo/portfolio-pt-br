@@ -99,7 +99,7 @@ const About = () => {
                 </div>
                 <p>
                   Em resumo, eu sou uma Desenvolvedora Web criativa, determinada
-                  e esforçada procurando pela minha oportunidade na área tech.
+                  e esforçada procurando pela minha primeira oportunidade na área tech.
                   Se você quiser <span className="hire-me">me contratar</span>,
                   ou apenas entrar em contato comigo, você pode me encontrar no{" "}
                   <a

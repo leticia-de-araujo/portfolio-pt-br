@@ -62,7 +62,6 @@ export const DivAbout = styled.div`
       background-color: #907ad6;
       align-self: center;
     }
-
   }
 
   .about-textAndSkills {
@@ -92,8 +91,9 @@ export const DivAbout = styled.div`
   .typewriter {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     gap: 0.3rem;
-    height: 2rem;
+    min-height: 2rem;
   }
 
   .kenzie {
