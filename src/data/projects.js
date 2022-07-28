@@ -7,7 +7,7 @@ import LolaShop from "../imgs/3d-icons/LolaShop_cart_perspective_matte.png";
 
 export const projects = [
   {
-    name: "Kenzie Burger",
+    name: "Burguer Shop",
     id: "Burger",
     bgColor: "linear-gradient(to top, #27ae60, #11998e)",
     icon: Burger,
@@ -17,12 +17,12 @@ export const projects = [
       "O layout foi desenvolvido utilizando os conceitos de mobile-first e responsividade.",
     ],
     techs: ["HTML", "CSS", "JavaScript", "React.js", "Integração com REST Api"],
-    liveDemo: "https://hamburgueria-kenzie-leticia-de-araujo.vercel.app",
+    liveDemo: "https://burguer-shop-pearl.vercel.app/",
     gitHub:
       "https://github.com/leticia-de-araujo/react-hamburgueria-da-kenzie-leticia-de-araujo",
   },
   {
-    name: "Kenzie Hub",
+    name: "DevHub",
     id: "Hub",
     bgColor: "linear-gradient(to top, #1cb5e0, #000046)",
     icon: Hub,
