@@ -14,21 +14,31 @@ const skills = [
     skillName: "Javascript",
     amount: "90",
   },
-  { id: 3, skillName: "React.js", amount: "80" },
+  { id: 3, skillName: "React.js", amount: "90" },
   {
     id: 4,
+    skillName: "Redux",
+    amount: "70",
+  },
+  {
+    id: 5,
     skillName: "Git and GitHub",
     amount: "75",
   },
   {
-    id: 5,
+    id: 6,
     skillName: "Figma",
     amount: "60",
   },
   {
-    id: 6,
-    skillName: "Back-End",
-    amount: "",
+    id: 7,
+    skillName: "TypeScript", 
+    amount: "60",
+  },
+  {
+    id: 8,
+    skillName: "Node.js", 
+    amount: "65",
   },
 ];
 

@@ -42,7 +42,7 @@ const Home = () => {
             <Typewriter
               options={{
                 strings: [
-                  "Eu amo construir páginas web.",
+                  "Eu amo desenvolvimento web.",
                   "Eu amo aprender novas tecnologias",
                   "Eu crio lindas experiências digitais.",
                 ],
@@ -56,7 +56,7 @@ const Home = () => {
           <Bounce cascade>
             <div className="links">
               <a
-                href="https://www.linkedin.com/in/let%C3%ADcia-de-ara%C3%BAjo-nunes-88bb731bb/"
+                href="https://www.linkedin.com/in/leticia-de-araujo-nunes"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -42,7 +42,7 @@ const About = () => {
                   <span role="img" aria-label="stars">
                     ✨
                   </span>{" "}
-                  Sou uma desenvolvedora Front-End Jr, determinada em aprender
+                  Sou uma desenvolvedora Front-End e Full-Stack Jr., determinada em aprender
                   um pouco mais a cada dia.
                 </p>
                 <p>
@@ -73,8 +73,13 @@ const About = () => {
                     ✨
                   </span>{" "}
                   Os meus projetos atuais foram construídos em JavaScript e
-                  React.js. Porém, nas próximas semanas estarei explorando o
-                  mundo de Back-End.
+                  React.js.
+                </p>
+                <p>
+                  <span role="img" aria-label="stars">
+                    ✨
+                  </span>{" "}
+                  Atualmente, eu estou estudando Node.js, Express, TypeScript. Então, irei adicionar projetos com essas tecnologias aqui em breve. Além disso, eu estarei explorando mais do mundo Back-End nos próximos meses.
                 </p>
                 <div className="typewriter">
                   <p className="typewriter-start">
@@ -103,7 +108,7 @@ const About = () => {
                   Se você quiser <span className="hire-me">me contratar</span>,
                   ou apenas entrar em contato comigo, você pode me encontrar no{" "}
                   <a
-                    href="https://www.linkedin.com/in/let%C3%ADcia-de-ara%C3%BAjo-nunes-88bb731bb/"
+                    href="https://www.linkedin.com/in/leticia-de-araujo-nunes"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="linkedin"

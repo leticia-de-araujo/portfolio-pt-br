@@ -1,4 +1,3 @@
-import { CircularProgress } from "@mui/material";
 import React, { useRef } from "react";
 import IsVisible from "react-is-visible";
 import { Fade } from "react-reveal";
@@ -31,7 +30,7 @@ const Skills = () => {
               <h2>Skills</h2>
               <ul className="skills-ul" ref={skillsWrapper}>
                 {skills?.map((skills) => {
-                  return skills.skillName !== "Back-End" ? (
+                  return (
                     <li className="skill-bar-wrapper" key={skills.skillName}>
                       <div
                         className="skill-bar"
@@ -49,14 +48,6 @@ const Skills = () => {
                         }
                       ></div>
                       <div className="skill-name">{skills.skillName}</div>
-                    </li>
-                  ) : (
-                    <li className="skill-bar-wrapper" key={skills.skillName}>
-                      <div className="skill-name">{skills.skillName}</div>
-                      <div className="loading">
-                        <span>Carregando</span>
-                        <CircularProgress size={22} />
-                      </div>
                     </li>
                   );
                 })}

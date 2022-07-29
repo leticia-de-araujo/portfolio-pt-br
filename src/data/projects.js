@@ -1,9 +1,7 @@
 import Burger from "../imgs/3d-icons/Burger_perspective_matte.png";
 import Hub from "../imgs/3d-icons/Hub_perspective_matte.png";
 import LolaShop from "../imgs/3d-icons/LolaShop_cart_perspective_matte.png";
-// import OnTrip from "../imgs/3d-icons/OnTrip_perspective_matte.png";
-
-// TODO Colocar OnTrip
+import OnTrip from "../imgs/3d-icons/OnTrip_perspective_matte.png";
 
 export const projects = [
   {
@@ -47,6 +45,34 @@ export const projects = [
     liveDemo: "https://kenzie-hub-rosy-ten.vercel.app/",
     gitHub:
       "https://github.com/leticia-de-araujo/react-kenzie-hub-leticia-de-araujo",
+  },
+  {
+    name: "OnTrip",
+    id: "OnTrip",
+    bgColor: "linear-gradient(to top, #c193ff,  #5614b0)",
+    icon: OnTrip,
+    info: [
+      "O OnTrip tem como proposta ser uma plataforma para reserva de acomodações focada em nômades digitais.",
+      "Esse foi o projeto final do curso de Front-End da Kenzie Academy, e foi feito em um grupo de 6 desenvolvedores.",
+      "Esta aplicação foi desenvolvida em React.js, com o auxílio de bibliotecas desta tecnologia.",
+      "O layout foi desenvolvido utilizando os conceitos de mobile-first e responsividade.",
+    ],
+    techs: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Redux",
+      "Redux-thunk",
+      "React Router Dom",
+      "React Hook Form",
+      "Yup Resolver",
+      "Axios",
+      "Styled-components",
+      "Material UI",
+    ],
+    liveDemo: "https://on-trip.vercel.app/",
+    gitHub: "https://github.com/brunopassos/Capstone-m3",
   },
   {
     name: "Lola Shop",

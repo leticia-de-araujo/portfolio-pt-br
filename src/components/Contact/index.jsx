@@ -29,7 +29,7 @@ const Contact = () => {
                 <img src={github} alt="Github Logo" width="40px" />
               </a>
               <a
-                href="https://www.linkedin.com/in/let%C3%ADcia-de-ara%C3%BAjo-nunes-88bb731bb/"
+                href="https://www.linkedin.com/in/leticia-de-araujo-nunes"
                 target="_blank"
                 rel="noopener noreferrer"
               >
