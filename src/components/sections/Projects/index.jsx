@@ -1,7 +1,7 @@
 import { Avatar, Card, Divider, Button } from "@mui/material";
 import { Fade } from "react-reveal";
 import { StyledDiv } from "./style";
-import { projects } from "../../data/projects";
+import { projects } from "../../../data/projects";
 import { v4 as uuidv4 } from "uuid";
 
 const Projects = () => {
@@ -23,6 +23,7 @@ const Projects = () => {
                 <Card className="project-card">
                   <header style={{ background: project.bgColor }}>
                     <h2>{project.name}</h2>
+                    <span>{project.stack}</span>
                     <Avatar
                       alt={`${project.id} icon`}
                       src={project.icon}

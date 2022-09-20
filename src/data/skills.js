@@ -1,44 +1,86 @@
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiDocker,
+  SiGit,
+  SiStyledcomponents,
+  SiMaterialui,
+  SiRedux,
+  SiTypescript,
+  SiExpress,
+  SiPostgresql,
+  SiJest,
+} from "react-icons/si";
+
 const skills = [
   {
     id: 0,
     skillName: "HTML",
-    amount: "95",
+    img: SiHtml5,
   },
   {
     id: 1,
     skillName: "CSS",
-    amount: "95",
+    img: SiCss3,
   },
   {
     id: 2,
-    skillName: "Javascript",
-    amount: "90",
+    skillName: "JavaScript",
+    img: SiJavascript,
   },
-  { id: 3, skillName: "React.js", amount: "90" },
+  { id: 3, skillName: "React.js", img: SiReact },
   {
     id: 4,
     skillName: "Redux",
-    amount: "70",
+    img: SiRedux,
   },
   {
     id: 5,
-    skillName: "Git and GitHub",
-    amount: "75",
+    skillName: "Material UI",
+    img: SiMaterialui,
   },
   {
     id: 6,
-    skillName: "Figma",
-    amount: "60",
+    skillName: "Styled Components",
+    img: SiStyledcomponents,
   },
   {
     id: 7,
-    skillName: "TypeScript", 
-    amount: "60",
+    skillName: "TypeScript",
+    img: SiTypescript,
   },
   {
     id: 8,
-    skillName: "Node.js", 
-    amount: "65",
+    skillName: "Node.js",
+    img: SiNodedotjs,
+  },
+  {
+    id: 9,
+    skillName: "Express",
+    img: SiExpress,
+  },
+  {
+    id: 10,
+    skillName: "PostgreSQL",
+    img: SiPostgresql,
+  },
+  {
+    id: 11,
+    skillName: "Jest",
+    img: SiJest,
+  },
+  {
+    id: 12,
+    skillName: "Docker",
+    img: SiDocker,
+  },
+  {
+    id: 13,
+    skillName: "Git e GitHub",
+    img: SiGit,
   },
 ];
 

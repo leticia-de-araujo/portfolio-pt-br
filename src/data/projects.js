@@ -6,6 +6,7 @@ import OnTrip from "../imgs/3d-icons/OnTrip_perspective_matte.png";
 export const projects = [
   {
     name: "Burguer Shop",
+    stack: "Front-End",
     id: "Burger",
     bgColor: "linear-gradient(to top, #27ae60, #11998e)",
     icon: Burger,
@@ -21,6 +22,7 @@ export const projects = [
   },
   {
     name: "DevHub",
+    stack: "Front-End",
     id: "Hub",
     bgColor: "linear-gradient(to top, #1cb5e0, #000046)",
     icon: Hub,
@@ -48,6 +50,7 @@ export const projects = [
   },
   {
     name: "OnTrip",
+    stack: "Front-End",
     id: "OnTrip",
     bgColor: "linear-gradient(to top, #c193ff,  #5614b0)",
     icon: OnTrip,
@@ -76,6 +79,7 @@ export const projects = [
   },
   {
     name: "Lola Shop",
+    stack: "Front-End",
     id: "LolaShop",
     bgColor: "linear-gradient(to top, #ffc0cb, #800080)",
     icon: LolaShop,

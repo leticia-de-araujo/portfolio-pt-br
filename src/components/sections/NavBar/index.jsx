@@ -4,7 +4,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { ErrorBoundary } from "react-error-boundary";
-import ErrorFallback from "../../components/ErrorFallback";
+import ErrorFallback from "../../errors/ErrorFallback";
 import { StyledAppBar, StyledBox } from "./style";
 
 const NavBar = () => {

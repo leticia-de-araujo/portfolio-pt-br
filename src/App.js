@@ -1,25 +1,25 @@
 import React from "react";
-
+import TopButton from "./components/assets/TopButton";
+import About from "./components/sections/About";
+import Contact from "./components/sections/Contact";
+import Home from "./components/sections/Home";
+import Projects from "./components/sections/Projects";
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorFallback from "./components/errors/ErrorFallback";
 import "./App.css";
-import About from "./components/About";
 
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import TopButton from "./components/TopButton";
-
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-      <TopButton />
+      <ErrorBoundary FallbackComponent={ErrorFallback}>
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+        <TopButton />
+      </ErrorBoundary>
     </div>
   );
-}
+};
 
 export default App;

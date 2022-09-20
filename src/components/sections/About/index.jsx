@@ -4,10 +4,9 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
 import { Bounce, Fade } from "react-reveal";
 import { Divider } from "@mui/material";
-import ProfilePic from "../../imgs/social/profilepic.png";
+import ProfilePic from "../../../imgs/social/profilepic.png";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
-import Skills from "../Skills";
-
+import Skills from "../../sections/Skills";
 
 const About = () => {
   return (
@@ -42,8 +41,8 @@ const About = () => {
                   <span role="img" aria-label="stars">
                     ✨
                   </span>{" "}
-                  Sou uma desenvolvedora Front-End e Full-Stack Jr., determinada em aprender
-                  um pouco mais a cada dia.
+                  Sou uma desenvolvedora Back-End e Full-Stack Jr., determinada
+                  em aprender um pouco mais a cada dia.
                 </p>
                 <p>
                   <span role="img" aria-label="stars">
@@ -56,7 +55,7 @@ const About = () => {
                   <span role="img" aria-label="stars">
                     ✨
                   </span>{" "}
-                  Eu estou na metade do curso de Desenvolvimento Web Full-Stack
+                  Eu estou no último módulo do curso de Desenvolvimento Web Full-Stack
                   de 2000 horas na{" "}
                   <a
                     href="https://kenzie.com.br/"
@@ -72,14 +71,16 @@ const About = () => {
                   <span role="img" aria-label="stars">
                     ✨
                   </span>{" "}
-                  Os meus projetos atuais foram construídos em JavaScript e
-                  React.js.
+                  Os meus projetos atuais foram construídos em JavaScript,
+                  React.js, Node.js/Express e TypeScript.
                 </p>
                 <p>
                   <span role="img" aria-label="stars">
                     ✨
                   </span>{" "}
-                  Atualmente, eu estou estudando Node.js, Express, TypeScript. Então, irei adicionar projetos com essas tecnologias aqui em breve. Além disso, eu estarei explorando mais do mundo Back-End nos próximos meses.
+                  Atualmente, estou estudando Python e Django.
+                  Então, irei adicionar projetos também com essas tecnologias aqui em
+                  breve.
                 </p>
                 <div className="typewriter">
                   <p className="typewriter-start">
@@ -104,9 +105,10 @@ const About = () => {
                 </div>
                 <p>
                   Em resumo, eu sou uma Desenvolvedora Web criativa, determinada
-                  e esforçada procurando pela minha primeira oportunidade na área tech.
-                  Se você quiser <span className="hire-me">me contratar</span>,
-                  ou apenas entrar em contato comigo, você pode me encontrar no{" "}
+                  e esforçada procurando pela minha primeira oportunidade na
+                  área tech. Caso você queria{" "}
+                  <span className="hire-me">me contratar</span>, ou apenas
+                  entrar em contato comigo, você pode me encontrar no{" "}
                   <a
                     href="https://www.linkedin.com/in/leticia-de-araujo-nunes"
                     target="_blank"

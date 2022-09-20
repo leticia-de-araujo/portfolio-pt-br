@@ -6,11 +6,11 @@ import { Link } from "react-scroll";
 
 import Typewriter from "typewriter-effect";
 
-import linkedin from "../../imgs/social/linkedin.png";
+import linkedin from "../../../imgs/social/linkedin.png";
 
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import Particles from "react-tsparticles";
-import particlesOptions from "../../particles.json";
+import particlesOptions from "../../../particles.json";
 import { loadFull } from "tsparticles";
 import { IconButton } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -23,11 +23,11 @@ const Home = () => {
   return (
     <HomeMainDiv name="home">
       <Fade bottom duration={1000}>
-        <a href="https://portfolio-leticia.vercel.app/" className="language">
+        {/* <a href="https://portfolio-leticia.vercel.app/" className="language">
           <IconButton>
             EN <LanguageIcon sx={{ fontSize: "0.9rem" }} />
           </IconButton>
-        </a>
+        </a> */}
       </Fade>
       <Particles options={particlesOptions} init={particlesInit} />
       <div className="homeInnerDiv">
@@ -42,13 +42,13 @@ const Home = () => {
             <Typewriter
               options={{
                 strings: [
-                  "Eu amo desenvolvimento web.",
-                  "Eu amo aprender novas tecnologias",
-                  "Eu crio lindas experiências digitais.",
+                  "Desenvolvedora Full-Stack",
+                  "Desenvolvedora Back-End",
+                  "Apaixonada por criar experiências por meio da tecnologia",
                 ],
                 autoStart: true,
                 loop: true,
-                deleteSpeed: 10,
+                deleteSpeed: 15,
                 delay: 100,
               }}
             />

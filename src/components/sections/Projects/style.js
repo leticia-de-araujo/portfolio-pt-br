@@ -92,6 +92,13 @@ export const StyledDiv = styled.div`
         font-size: 1.3rem;
       }
 
+      span {
+        font-size: 0.85rem;
+        color: white;
+        position: absolute;
+        top: 57px;
+      }
+
       .avatar {
         width: 6rem;
         height: 6rem;
@@ -139,8 +146,6 @@ export const StyledDiv = styled.div`
           @media screen and (max-width: 300px) {
             font-size: 0.8rem;
           }
-
-        
         }
 
         & > li > p > span {

@@ -1,9 +1,10 @@
 import { Divider } from "@mui/material";
 import { Bounce, Fade } from "react-reveal";
-import ContactForm from "../../ContactForm";
 import { StyledDiv } from "./style";
-import github from "../../imgs/social/github.png";
-import linkedin from "../../imgs/social/linkedin.png";
+import github from "../../../imgs/social/github.png";
+import linkedin from "../../../imgs/social/linkedin.png";
+import ContactForm from "../../assets/ContactForm";
+
 
 const Contact = () => {
   return (
