@@ -1,13 +1,8 @@
 import { HomeMainDiv } from "./style";
-
 import { Fade, Bounce } from "react-reveal";
-
 import { Link } from "react-scroll";
-
 import Typewriter from "typewriter-effect";
-
-import linkedin from "../../../imgs/social/linkedin.png";
-
+import github from "../../../imgs/social/github.png";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import Particles from "react-tsparticles";
 import particlesOptions from "../../../particles.json";
@@ -56,11 +51,11 @@ const Home = () => {
           <Bounce cascade>
             <div className="links">
               <a
-                href="https://www.linkedin.com/in/leticia-de-araujo-nunes"
+                href="https://github.com/leticia-de-araujo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={linkedin} alt="Linkedin Logo" />
+                <img src={github} alt="GitHub Logo" />
               </a>
             </div>
           </Bounce>
