@@ -2,12 +2,27 @@ import styled from "styled-components";
 
 export const HomeMainDiv = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
   height: calc(100vh + 67px);
   color: white;
+  background: #eb5757; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #000000,
+    #eb5757
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom right,
+    #000000,
+    #eb5757
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0 1rem 1rem 1rem;
+
+  @media (min-width: 720px) {
+    padding: 0 0 1rem 1rem;
+  }
 
   .language {
     position: absolute;
@@ -30,32 +45,51 @@ export const HomeMainDiv = styled.div`
     }
   }
 
-  .homeInnerDiv {
+  .home-text-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
     gap: 1rem;
+    width: 100%;
 
-    h1 {
-      font-size: 1.7rem;
+    @media (min-width: 720px) {
+      width: 76%;
+    }
 
-      @media (min-width: 600px) {
-        font-size: 2rem;
+    .home-text-top-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        width: 50px;
+        border-radius: 50%;
       }
 
-      .name {
-        color: #907ad6;
-      }
+      h1 {
+        font-size: 1.1rem;
+        font-weight: 500;
 
-      .wave-emoji {
-        animation-duration: 1.8s;
-        animation-iteration-count: infinite;
-        animation-name: wave;
-        display: inline-block;
-        transform-origin: 70% 70%;
-        animation-fill-mode: forwards;
+        @media (min-width: 600px) {
+          font-size: 1.3rem;
+        }
+
+        .name {
+          color: #eb5757;
+        }
+
+        .wave-emoji {
+          margin-left: 5px;
+          animation-duration: 1.8s;
+          animation-iteration-count: infinite;
+          animation-name: wave;
+          display: inline-block;
+          transform-origin: 70% 70%;
+          animation-fill-mode: forwards;
+        }
       }
     }
 
@@ -63,7 +97,7 @@ export const HomeMainDiv = styled.div`
       font-size: 1.5rem;
 
       @media (min-width: 600px) {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
       }
     }
 
@@ -91,9 +125,15 @@ export const HomeMainDiv = styled.div`
       }
     }
 
-    .links {
-      margin-top: 2rem;
+    .linksAndButtons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
 
+    .links {
       img {
         width: 30px;
 
@@ -101,6 +141,18 @@ export const HomeMainDiv = styled.div`
           width: 40px;
         }
       }
+    }
+  }
+
+  .home-banner-div {
+    display: none;
+
+    @media (min-width: 720px) {
+      display: block;
+    }
+
+    img {
+      width: 100%;
     }
   }
 `;

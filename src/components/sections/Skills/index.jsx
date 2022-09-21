@@ -8,7 +8,6 @@ const Skills = () => {
   return (
     <Fade duration={1000}>
       <SkillsDiv>
-        <h2>Skills</h2>
         <ul className="skills-ul">
           {skills?.map((skills) => {
             return (

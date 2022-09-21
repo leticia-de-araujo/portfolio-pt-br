@@ -97,7 +97,7 @@ const ContactForm = () => {
             error={fromNameError ? true : false}
             helperText={fromNameError ? "Insira seu nome, por favor." : null}
             sx={{
-              bgcolor: "#3b4353",
+              bgcolor: "#292929",
               borderRadius: "4px 4px 0 0 ",
               width: "100%",
             }}
@@ -111,7 +111,7 @@ const ContactForm = () => {
             error={fromEmailError ? true : false}
             helperText={fromEmailError ? "Insira seu email, por favor." : null}
             sx={{
-              bgcolor: "#3b4353",
+              bgcolor: "#292929",
               borderRadius: "4px 4px 0 0 ",
               width: "100%",
             }}
@@ -127,7 +127,7 @@ const ContactForm = () => {
             multiline
             rows={5}
             sx={{
-              bgcolor: "#3b4353",
+              bgcolor: "#292929",
               borderRadius: "4px 4px 0 0 ",
               width: "100%",
             }}

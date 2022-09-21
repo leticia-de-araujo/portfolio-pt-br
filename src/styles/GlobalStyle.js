@@ -2,14 +2,11 @@ import { createTheme } from "@mui/material";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-
  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    
-
  }
 
 `;
@@ -17,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#907ad6",
+      main: "#eb5757",
     },
     secondary: {
       main: "#ffffff",

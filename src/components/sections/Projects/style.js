@@ -8,8 +8,9 @@ export const StyledDiv = styled.div`
   min-height: 100vh;
   height: 100%;
   padding: 1.5rem;
-  background-color: #0d1b3a;
+  background-color: #070707;
   color: white;
+  position: relative;
 
   .projects {
     display: flex;
@@ -34,7 +35,7 @@ export const StyledDiv = styled.div`
     .divider {
       height: 4px;
       width: 4rem;
-      background-color: #907ad6;
+      background-color: #eb5757;
       align-self: center;
     }
   }
@@ -56,7 +57,7 @@ export const StyledDiv = styled.div`
     height: 100%;
     max-width: 30rem;
     min-height: 158px;
-    background-color: #3b4353;
+    background-color: #292929;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +65,6 @@ export const StyledDiv = styled.div`
 
     &:hover {
       transform: translateY(-10px);
-      background-color: #474f63;
     }
 
     header {
@@ -181,7 +181,7 @@ export const StyledDiv = styled.div`
 
         li {
           font-size: 0.7rem;
-          background-color: #5e6a80;
+          background-color: #565656;
           border-radius: 5px;
           padding: 5px 10px;
 

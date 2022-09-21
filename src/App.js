@@ -6,15 +6,15 @@ import Home from "./components/sections/Home";
 import Projects from "./components/sections/Projects";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorFallback from "./components/errors/ErrorFallback";
-import "./App.css";
+
 
 const App = () => {
   return (
     <div className="App">
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <Home />
-        <About />
         <Projects />
+        <About />
         <Contact />
         <TopButton />
       </ErrorBoundary>
