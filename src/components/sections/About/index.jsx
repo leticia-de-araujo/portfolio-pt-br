@@ -1,18 +1,15 @@
-import NavBar from "../NavBar";
 import { DivAbout } from "./style";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
-import { Bounce, Fade } from "react-reveal";
+import { Fade } from "react-reveal";
 import { Divider } from "@mui/material";
-import ProfilePic from "../../../imgs/social/profilepic.png";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
-import Skills from "../../sections/Skills";
+import Lottie from "react-lottie";
+import codingAnimation from "../../../animations/codingAnimation.json";
 
 const About = () => {
   return (
     <div name="about">
-      <NavBar />
-
       <DivAbout>
         <Fade bottom duration={1000}>
           <div className="about-content">
@@ -24,19 +21,10 @@ const About = () => {
                 <Divider className="divider" />
               </Fade>
             </div>
-            <Bounce>
-              <img alt="Profile" src={ProfilePic} className="profilePic" />
-            </Bounce>
 
-            <div className="about-textAndSkills">
+            <div className="about-textAndLottie">
               <div className="about-text">
-                <h3>Quem sou eu?</h3>
-                <p>
-                  Eu sou a Letícia{" "}
-                  <span role="img" aria-label="smilling-face">
-                    😄
-                  </span>
-                </p>
+                <h3>Um pouco mais sobre mim</h3>
                 <p>
                   <span role="img" aria-label="stars">
                     ✨
@@ -55,8 +43,8 @@ const About = () => {
                   <span role="img" aria-label="stars">
                     ✨
                   </span>{" "}
-                  Eu estou no último módulo do curso de Desenvolvimento Web Full-Stack
-                  de 2000 horas na{" "}
+                  Eu estou no último módulo do curso de Desenvolvimento Web
+                  Full-Stack de 2000 horas na{" "}
                   <a
                     href="https://kenzie.com.br/"
                     target="_blank"
@@ -78,9 +66,8 @@ const About = () => {
                   <span role="img" aria-label="stars">
                     ✨
                   </span>{" "}
-                  Atualmente, estou estudando Python e Django.
-                  Então, irei adicionar projetos também com essas tecnologias aqui em
-                  breve.
+                  Atualmente, estou estudando Python e Django. Então, irei
+                  adicionar projetos também com essas tecnologias aqui em breve.
                 </p>
                 <div className="typewriter">
                   <p className="typewriter-start">
@@ -135,7 +122,11 @@ const About = () => {
                   Curitiba, Brasil
                 </p>
               </div>
-              <Skills />
+              <div className="lottie">
+                <Lottie
+                  options={{ animationData: codingAnimation }}
+                />
+              </div>
             </div>
           </div>
         </Fade>

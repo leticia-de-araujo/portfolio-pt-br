@@ -40,13 +40,13 @@ export const SkillsDiv = styled.div`
     gap: 0.6rem;
 
     &:hover {
-      background-color: #3b4353;
+      background-color: #070707;
     }
 
     svg {
       width: 2rem;
       height: 2rem;
-      color: #907ad6;
+      color: #eb5757;
     }
   }
 

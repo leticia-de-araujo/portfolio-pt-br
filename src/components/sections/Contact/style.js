@@ -7,7 +7,7 @@ export const StyledDiv = styled.div`
   min-height: 100vh;
   height: 100%;
   padding: 2rem;
-  background-color: #0d1b3a;
+  background-color: #070707;
   color: white;
 
   .contact {
@@ -34,7 +34,7 @@ export const StyledDiv = styled.div`
     .divider {
       height: 4px;
       width: 4rem;
-      background-color: #907ad6;
+      background-color: #eb5757;
       align-self: center;
     }
   }

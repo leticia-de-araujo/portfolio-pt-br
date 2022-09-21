@@ -7,7 +7,7 @@ export const StyledButton = styled.button`
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #907ad6;
+  background-color: #EB5757;
   color: white;
   cursor: pointer;
   padding: 5px;

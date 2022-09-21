@@ -4,8 +4,9 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { ErrorBoundary } from "react-error-boundary";
-import ErrorFallback from "../../errors/ErrorFallback";
+
 import { StyledAppBar, StyledBox } from "./style";
+import ErrorFallback from "../../errors/ErrorFallback";
 
 const NavBar = () => {
   const drawerWidth = 240;
@@ -38,17 +39,6 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="about" spy={true} smooth={true} duration={500}>
-            <Button
-              variant="text"
-              sx={{ fontSize: "1rem" }}
-              onClick={handleDrawerToggle}
-            >
-              Sobre
-            </Button>
-          </Link>
-        </li>
-        <li>
           <Link to="projects" spy={true} smooth={true} duration={500}>
             <Button
               variant="text"
@@ -56,6 +46,17 @@ const NavBar = () => {
               onClick={handleDrawerToggle}
             >
               Projetos
+            </Button>
+          </Link>
+        </li>
+        <li>
+          <Link to="about" spy={true} smooth={true} duration={500}>
+            <Button
+              variant="text"
+              sx={{ fontSize: "1rem" }}
+              onClick={handleDrawerToggle}
+            >
+              Sobre
             </Button>
           </Link>
         </li>
@@ -79,7 +80,7 @@ const NavBar = () => {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <StyledAppBar component="nav">
-        <Toolbar>
+        <Toolbar sx={{ maxHeight: "58px" }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -104,17 +105,6 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="about" spy={true} smooth={true} duration={500}>
-                  <Button
-                    variant="text"
-                    color="secondary"
-                    sx={{ fontSize: "1rem" }}
-                  >
-                    Sobre
-                  </Button>
-                </Link>
-              </li>
-              <li>
                 <Link to="projects" spy={true} smooth={true} duration={500}>
                   <Button
                     variant="text"
@@ -122,6 +112,17 @@ const NavBar = () => {
                     sx={{ fontSize: "1rem" }}
                   >
                     Projetos
+                  </Button>
+                </Link>
+              </li>
+              <li>
+                <Link to="about" spy={true} smooth={true} duration={500}>
+                  <Button
+                    variant="text"
+                    color="secondary"
+                    sx={{ fontSize: "1rem" }}
+                  >
+                    Sobre
                   </Button>
                 </Link>
               </li>
@@ -152,6 +153,7 @@ const NavBar = () => {
           sx={{
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
+              bgcolor: " #070707",
               boxSizing: "border-box",
               width: drawerWidth,
               height: "35vh",

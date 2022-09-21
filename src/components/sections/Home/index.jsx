@@ -4,78 +4,101 @@ import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import github from "../../../imgs/social/github.png";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
-import Particles from "react-tsparticles";
-import particlesOptions from "../../../particles.json";
-import { loadFull } from "tsparticles";
-import { IconButton } from "@mui/material";
+import ProfilePic from "../../../imgs/social/profilepic.png";
+import { Button, IconButton } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
+import projectsBanner from "../../../imgs/projects/projects.png";
+import NavBar from "../../assets/NavBar";
+import Skills from "../Skills";
 
 const Home = () => {
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
-
   return (
-    <HomeMainDiv name="home">
-      <Fade bottom duration={1000}>
-        {/* <a href="https://portfolio-leticia.vercel.app/" className="language">
+    <>
+      <NavBar />
+      <HomeMainDiv name="home">
+        {/* <Fade bottom duration={1000}>
+        <a href="https://portfolio-leticia.vercel.app/" className="language">
           <IconButton>
             EN <LanguageIcon sx={{ fontSize: "0.9rem" }} />
           </IconButton>
-        </a> */}
-      </Fade>
-      <Particles options={particlesOptions} init={particlesInit} />
-      <div className="homeInnerDiv">
-        <Fade bottom duration={1000}>
-          <h1>
-            Olá, eu sou a <span className="name">Letícia Araújo.</span>
-            <span className="wave-emoji" role="img" aria-label="waving hand">
-              👋
-            </span>
-          </h1>
-          <h2>
-            <Typewriter
-              options={{
-                strings: [
-                  "Desenvolvedora Full-Stack",
-                  "Desenvolvedora Back-End",
-                  "Apaixonada por criar experiências por meio da tecnologia",
-                ],
-                autoStart: true,
-                loop: true,
-                deleteSpeed: 15,
-                delay: 100,
-              }}
-            />
-          </h2>
-          <Bounce cascade>
-            <div className="links">
-              <a
-                href="https://github.com/leticia-de-araujo"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={github} alt="GitHub Logo" />
-              </a>
+        </a>
+      </Fade> */}
+        <div className="home-text-div">
+          <Fade bottom duration={1000}>
+            <div className="home-text-top-div">
+              <Bounce>
+                <img alt="Profile" src={ProfilePic} className="profilePic" />
+              </Bounce>
+
+              <h1>
+                Olá, me chamo <span className="name">Letícia Araújo</span>
+                <span
+                  className="wave-emoji"
+                  role="img"
+                  aria-label="waving hand"
+                >
+                  👋
+                </span>
+              </h1>
             </div>
-          </Bounce>
-          <div className="scroll-down">
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              <ArrowDropDownCircleIcon
-                fontSize="large"
-                style={{ pointerEvents: "fill", cursor: "pointer" }}
+            <h2>
+              <Typewriter
+                options={{
+                  strings: [
+                    "Desenvolvedora Full-Stack",
+                    "Desenvolvedora Back-End",
+                    "Amo criar experiências por meio da tecnologia",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 15,
+                  delay: 100,
+                }}
               />
-            </Link>
-          </div>
-        </Fade>
-      </div>
-    </HomeMainDiv>
+            </h2>
+            <div className="linksAndButtons">
+            <Bounce>
+              <div className="links">
+                <a
+                  href="https://github.com/leticia-de-araujo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={github} alt="GitHub Logo" />
+                </a>
+              </div>
+
+              <div className="scroll-down">
+                <Link
+                  activeClass="active"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  <Button variant="contained">
+                    Ver projetos
+                    <ArrowDropDownCircleIcon
+                      fontSize="large"
+                      style={{
+                        pointerEvents: "fill",
+                        cursor: "pointer",
+                        marginLeft: "5px",
+                      }}
+                    />
+                  </Button>
+                </Link>
+              </div>
+            </Bounce>
+            </div>
+          </Fade>
+          <Skills/>
+        </div>
+        <div className="home-banner-div">
+          <img src={projectsBanner} alt="My projects" />
+        </div>
+      </HomeMainDiv>
+    </>
   );
 };
 

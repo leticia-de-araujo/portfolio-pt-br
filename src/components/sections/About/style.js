@@ -7,8 +7,18 @@ export const DivAbout = styled.div`
   min-height: 92vh;
   height: 100%;
   padding: 1.7rem;
-  background-color: #0d1b3a;
   color: white;
+  background: #eb5757; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom left,
+    #000000,
+    #eb5757
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom left,
+    #000000,
+    #eb5757
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   @media screen and (min-width: 600px) {
     position: relative;
@@ -26,20 +36,6 @@ export const DivAbout = styled.div`
   .about-content {
     display: flex;
     flex-direction: column;
-
-    img {
-      outline: 4px solid #907ad6;
-      border-radius: 50%;
-      width: 170px;
-      height: 180px;
-      align-self: center;
-      margin: 1rem 0;
-
-      @media screen and (min-width: 850px) {
-        width: 190px;
-        height: 200px;
-      }
-    }
   }
 
   .about-title {
@@ -49,7 +45,7 @@ export const DivAbout = styled.div`
     justify-content: center;
     gap: 5px;
     align-self: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     h2 {
       font-size: 1.8rem;
@@ -59,12 +55,12 @@ export const DivAbout = styled.div`
     .divider {
       height: 4px;
       width: 6rem;
-      background-color: #907ad6;
+      background-color: #eb5757;
       align-self: center;
     }
   }
 
-  .about-textAndSkills {
+  .about-textAndLottie {
     display: flex;
     flex-direction: column;
 
@@ -74,6 +70,11 @@ export const DivAbout = styled.div`
       align-items: center;
       gap: 2rem;
     }
+  }
+
+  .lottie {
+    max-width: 600px;
+    max-height: 600px;
   }
 
   .about-text {
@@ -104,7 +105,7 @@ export const DivAbout = styled.div`
 
   .kenzie:hover {
     cursor: pointer;
-    color: #907ad6;
+    color: #eb5757;
   }
 
   .hire-me {
@@ -119,12 +120,12 @@ export const DivAbout = styled.div`
 
   .linkedin:hover {
     cursor: pointer;
-    color: #907ad6;
+    color: #eb5757;
   }
 
   .email:hover {
     cursor: pointer;
-    color: #907ad6;
+    color: #eb5757;
   }
 
   .divider-2 {
