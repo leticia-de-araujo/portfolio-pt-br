@@ -3,12 +3,8 @@ import styled from "styled-components";
 export const SkillsDiv = styled.div`
   position: relative;
   width: 100%;
-  max-width: 50rem;
+  max-width: 45rem;
   color: white;
-
-  @media screen and (min-width: 850px) {
-    width: 450px;
-  }
 
   h2 {
     font-size: 1.5rem;
@@ -25,28 +21,23 @@ export const SkillsDiv = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
 
-  .skill-box-wrapper {
+  li {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    height: 5rem;
-    width: 6rem;
-    padding: 0.5rem;
-    gap: 0.6rem;
-
-    &:hover {
-      background-color: #070707;
-    }
+    height: 4rem;
+    width: 4rem;
+    gap: 0.7rem;
 
     svg {
-      width: 2rem;
-      height: 2rem;
-      color: #eb5757;
+      width: 2.5em;
+      height: 2.5rem;
+      color: #ffffffe8;
     }
   }
 

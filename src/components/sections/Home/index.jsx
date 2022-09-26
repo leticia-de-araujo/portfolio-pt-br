@@ -5,11 +5,12 @@ import Typewriter from "typewriter-effect";
 import github from "../../../imgs/social/github.png";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import ProfilePic from "../../../imgs/social/profilepic.png";
-import { Button, IconButton } from "@mui/material";
+import { Button, IconButton, SvgIcon } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import projectsBanner from "../../../imgs/projects/projects.png";
 import NavBar from "../../assets/NavBar";
 import Skills from "../Skills";
+import { SiGithub } from "react-icons/si";
 
 const Home = () => {
   return (
@@ -64,7 +65,7 @@ const Home = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={github} alt="GitHub Logo" />
+                    <SvgIcon component={SiGithub} />
                   </a>
                 </div>
 
@@ -74,12 +75,13 @@ const Home = () => {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    duration={500}
+                    duration={800}
+                    offset={-58}
                   >
                     <Button variant="contained">
                       Ver projetos
                       <ArrowDropDownCircleIcon
-                        fontSize="large"
+                        fontSize="small"
                         style={{
                           pointerEvents: "fill",
                           cursor: "pointer",
