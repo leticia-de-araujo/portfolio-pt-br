@@ -5,13 +5,17 @@ export const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: calc(100vh - 66px);
-  padding: 3rem 2rem;
+  min-height: calc(100vh - 58px);
+  padding: 2rem;
   background-color: #070707;
   color: white;
   position: relative;
 
-  .projects {
+  @media screen and (min-width: 600px) {
+    min-height: calc(100vh - 66px);
+  }
+
+  .projects-innerDiv {
     display: flex;
     flex-direction: column;
     gap: 1rem;

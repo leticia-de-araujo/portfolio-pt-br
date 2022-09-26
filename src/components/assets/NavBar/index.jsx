@@ -28,7 +28,7 @@ const NavBar = () => {
       </IconButton>
       <ul className="ul-mobile">
         <li>
-          <Link to="home" spy={true} smooth={true} duration={500} offset={-66}>
+          <Link to="home" spy={true} smooth={true} duration={800} offset={-58}>
             <Button
               variant="text"
               sx={{ fontSize: "1rem" }}
@@ -43,8 +43,8 @@ const NavBar = () => {
             to="projects"
             spy={true}
             smooth={true}
-            duration={500}
-            offset={-66}
+            duration={800}
+            offset={-58}
           >
             <Button
               variant="text"
@@ -56,7 +56,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="about" spy={true} smooth={true} duration={500} offset={-66}>
+          <Link to="about" spy={true} smooth={true} duration={800} offset={-58}>
             <Button
               variant="text"
               sx={{ fontSize: "1rem" }}
@@ -71,8 +71,8 @@ const NavBar = () => {
             to="contact"
             spy={true}
             smooth={true}
-            duration={500}
-            offset={-66}
+            duration={800}
+            offset={-58}
           >
             <Button
               variant="text"
@@ -110,8 +110,8 @@ const NavBar = () => {
                   to="home"
                   spy={true}
                   smooth={true}
-                  duration={500}
-                  offset={-66}
+                  duration={800}
+                  offset={-58}
                 >
                   <Button
                     variant="text"
@@ -127,8 +127,8 @@ const NavBar = () => {
                   to="projects"
                   spy={true}
                   smooth={true}
-                  duration={500}
-                  offset={-66}
+                  duration={800}
+                  offset={-58}
                 >
                   <Button
                     variant="text"
@@ -144,8 +144,8 @@ const NavBar = () => {
                   to="about"
                   spy={true}
                   smooth={true}
-                  duration={500}
-                  offset={-66}
+                  duration={800}
+                  offset={-58}
                 >
                   <Button
                     variant="text"
@@ -161,8 +161,8 @@ const NavBar = () => {
                   to="contact"
                   spy={true}
                   smooth={true}
-                  duration={500}
-                  offset={64}
+                  duration={800}
+                  offset={-58}
                 >
                   <Button
                     variant="text"
@@ -192,7 +192,7 @@ const NavBar = () => {
               bgcolor: " #070707",
               boxSizing: "border-box",
               width: drawerWidth,
-              height: "35vh",
+              maxHeight: "35vh",
               borderRadius: "0 0 1rem 0",
             },
           }}

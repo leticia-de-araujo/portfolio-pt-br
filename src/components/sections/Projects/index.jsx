@@ -6,9 +6,9 @@ import { v4 as uuidv4 } from "uuid";
 
 const Projects = () => {
   return (
-    <StyledDiv>
+    <StyledDiv className="projects">
       <Fade bottom>
-        <div className="projects">
+        <div className="projects-innerDiv">
           <div className="projects-title">
             <Fade left duration={1200}>
               <h2>Projetos</h2>

@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <HomeMainDiv name="home">
+      <HomeMainDiv className="home">
         {/* <Fade bottom duration={1000}>
         <a href="https://portfolio-leticia.vercel.app/" className="language">
           <IconButton>
@@ -46,8 +46,8 @@ const Home = () => {
                 options={{
                   strings: [
                     "Desenvolvedora Full-Stack",
+                    "Desenvolvedora Front-End",
                     "Desenvolvedora Back-End",
-                    "Amo criar experiências por meio da tecnologia",
                   ],
                   autoStart: true,
                   loop: true,
@@ -57,42 +57,42 @@ const Home = () => {
               />
             </h2>
             <div className="linksAndButtons">
-            <Bounce>
-              <div className="links">
-                <a
-                  href="https://github.com/leticia-de-araujo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={github} alt="GitHub Logo" />
-                </a>
-              </div>
+              <Bounce>
+                <div className="links">
+                  <a
+                    href="https://github.com/leticia-de-araujo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={github} alt="GitHub Logo" />
+                  </a>
+                </div>
 
-              <div className="scroll-down">
-                <Link
-                  activeClass="active"
-                  to="projects"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  <Button variant="contained">
-                    Ver projetos
-                    <ArrowDropDownCircleIcon
-                      fontSize="large"
-                      style={{
-                        pointerEvents: "fill",
-                        cursor: "pointer",
-                        marginLeft: "5px",
-                      }}
-                    />
-                  </Button>
-                </Link>
-              </div>
-            </Bounce>
+                <div className="scroll-down">
+                  <Link
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    <Button variant="contained">
+                      Ver projetos
+                      <ArrowDropDownCircleIcon
+                        fontSize="large"
+                        style={{
+                          pointerEvents: "fill",
+                          cursor: "pointer",
+                          marginLeft: "5px",
+                        }}
+                      />
+                    </Button>
+                  </Link>
+                </div>
+              </Bounce>
             </div>
           </Fade>
-          <Skills/>
+          <Skills />
         </div>
         <div className="home-banner-div">
           <img src={projectsBanner} alt="My projects" />
