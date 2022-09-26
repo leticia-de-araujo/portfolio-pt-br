@@ -28,7 +28,7 @@ const NavBar = () => {
       </IconButton>
       <ul className="ul-mobile">
         <li>
-          <Link to="home" spy={true} smooth={true} duration={500}>
+          <Link to="home" spy={true} smooth={true} duration={800} offset={-58}>
             <Button
               variant="text"
               sx={{ fontSize: "1rem" }}
@@ -39,7 +39,13 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="projects" spy={true} smooth={true} duration={500}>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={800}
+            offset={-58}
+          >
             <Button
               variant="text"
               sx={{ fontSize: "1rem" }}
@@ -50,7 +56,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="about" spy={true} smooth={true} duration={500}>
+          <Link to="about" spy={true} smooth={true} duration={800} offset={-58}>
             <Button
               variant="text"
               sx={{ fontSize: "1rem" }}
@@ -61,7 +67,13 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="contact" spy={true} smooth={true} duration={500}>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={800}
+            offset={-58}
+          >
             <Button
               variant="text"
               sx={{ fontSize: "1rem" }}
@@ -80,7 +92,7 @@ const NavBar = () => {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <StyledAppBar component="nav">
-        <Toolbar sx={{ maxHeight: "58px" }}>
+        <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -94,7 +106,13 @@ const NavBar = () => {
           <Box sx={{ display: { xs: "none", sm: "block" }, width: "100%" }}>
             <ul className="ul-desktop">
               <li>
-                <Link to="home" spy={true} smooth={true} duration={500}>
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  duration={800}
+                  offset={-58}
+                >
                   <Button
                     variant="text"
                     color="secondary"
@@ -105,7 +123,13 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="projects" spy={true} smooth={true} duration={500}>
+                <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  duration={800}
+                  offset={-58}
+                >
                   <Button
                     variant="text"
                     color="secondary"
@@ -116,7 +140,13 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="about" spy={true} smooth={true} duration={500}>
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={800}
+                  offset={-58}
+                >
                   <Button
                     variant="text"
                     color="secondary"
@@ -127,7 +157,13 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="contact" spy={true} smooth={true} duration={500}>
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={800}
+                  offset={-58}
+                >
                   <Button
                     variant="text"
                     color="secondary"
@@ -156,7 +192,7 @@ const NavBar = () => {
               bgcolor: " #070707",
               boxSizing: "border-box",
               width: drawerWidth,
-              height: "35vh",
+              maxHeight: "35vh",
               borderRadius: "0 0 1rem 0",
             },
           }}

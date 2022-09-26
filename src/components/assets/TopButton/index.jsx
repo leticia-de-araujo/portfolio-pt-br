@@ -8,8 +8,8 @@ const TopButton = () => {
 
   const scrollFunction = () => {
     if (
-      document.body.scrollTop > window.innerHeight + 63 ||
-      document.documentElement.scrollTop > window.innerHeight + 63
+      document.body.scrollTop > window.innerHeight ||
+      document.documentElement.scrollTop > window.innerHeight
     ) {
       setTopButtonVisible(true);
     } else {
@@ -31,6 +31,7 @@ const TopButton = () => {
       spy={true}
       smooth={true}
       duration={500}
+      offset={-66}
     >
       <StyledButton
         className={topButtonVisible ? "on" : "off"}

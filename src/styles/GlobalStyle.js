@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
  }
 
+ .App {
+  background-color: #070707;
+ }
+
 `;
 
 export const theme = createTheme({

@@ -5,7 +5,10 @@ export const HomeMainDiv = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: calc(100vh + 67px);
+  margin-top: 58px;
+  min-height: 100vh;
+  padding: 2rem;
+  gap: 1rem;
   color: white;
   background: #eb5757; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -18,10 +21,14 @@ export const HomeMainDiv = styled.div`
     #000000,
     #eb5757
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 0 1rem 1rem 1rem;
+
+  @media (min-width: 600px) {
+    margin-top: 66px;
+  }
 
   @media (min-width: 720px) {
-    padding: 0 0 1rem 1rem;
+    padding: 2rem 0 2rem 2rem;
+    height: calc(100vh + 66px);
   }
 
   .language {
@@ -51,7 +58,7 @@ export const HomeMainDiv = styled.div`
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     width: 100%;
 
     @media (min-width: 720px) {

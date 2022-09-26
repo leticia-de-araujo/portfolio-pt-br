@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SkillsDiv = styled.div`
   position: relative;
   width: 100%;
-  max-width: 37.5rem;
+  max-width: 50rem;
   color: white;
 
   @media screen and (min-width: 850px) {

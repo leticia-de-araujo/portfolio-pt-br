@@ -4,13 +4,16 @@ export const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
-  height: 100%;
+  min-height: calc(100vh - 58px);
   padding: 2rem;
   background-color: #070707;
   color: white;
 
-  .contact {
+  @media screen and (min-width: 600px) {
+    min-height: calc(100vh - 66px);
+  }
+
+  .contact-innerDiv {
     display: flex;
     flex-direction: column;
     height: 100%;

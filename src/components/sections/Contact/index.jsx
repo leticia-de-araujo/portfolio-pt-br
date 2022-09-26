@@ -5,12 +5,10 @@ import github from "../../../imgs/social/github.png";
 import linkedin from "../../../imgs/social/linkedin.png";
 import ContactForm from "../../assets/ContactForm";
 
-
 const Contact = () => {
   return (
-    <StyledDiv>
-      <Fade bottom duration={1000}>
-        <div className="contact">
+    <StyledDiv className="contact">
+        <div className="contact-innerDiv">
           <div className="contact-title">
             <Fade left duration={1200}>
               <h2>Contato</h2>
@@ -39,7 +37,6 @@ const Contact = () => {
             </div>
           </Bounce>
         </div>
-      </Fade>
     </StyledDiv>
   );
 };
