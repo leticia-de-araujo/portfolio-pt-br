@@ -1,4 +1,4 @@
-import { SvgIcon } from "@mui/material";
+import { SvgIcon, Tooltip } from "@mui/material";
 import React from "react";
 import { Fade } from "react-reveal";
 import skills from "../../../data/skills";
@@ -11,10 +11,11 @@ const Skills = () => {
         <ul className="skills-ul">
           {skills?.map((skills) => {
             return (
-              <li className="skill-box-wrapper" key={skills.skillName}>
-                <SvgIcon component={skills.img} />
-                <div className="skill-name">{skills.skillName}</div>
-              </li>
+              <Tooltip title={skills.skillName} key={skills.skillName}>
+                <li>
+                  <SvgIcon component={skills.img} />
+                </li>
+              </Tooltip>
             );
           })}
         </ul>

@@ -27,8 +27,8 @@ export const HomeMainDiv = styled.div`
   }
 
   @media (min-width: 720px) {
-    padding: 2rem 0 2rem 2rem;
-    height: calc(100vh + 66px);
+    padding: 0rem 0 2rem 2rem;
+    height: calc(100vh - 66px);
   }
 
   .language {
@@ -58,7 +58,8 @@ export const HomeMainDiv = styled.div`
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
+    height: 100vh;
     width: 100%;
 
     @media (min-width: 720px) {
@@ -81,7 +82,7 @@ export const HomeMainDiv = styled.div`
         font-weight: 500;
 
         @media (min-width: 600px) {
-          font-size: 1.3rem;
+          font-size: 1.5rem;
         }
 
         .name {
@@ -101,10 +102,19 @@ export const HomeMainDiv = styled.div`
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      height: 3.5rem;
 
       @media (min-width: 600px) {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+      }
+    }
+
+    .Typewriter {
+      height: 3.5rem;
+
+      @media (min-width: 600px) {
+        height: auto;
       }
     }
 
@@ -141,12 +151,14 @@ export const HomeMainDiv = styled.div`
     }
 
     .links {
-      img {
-        width: 30px;
+      svg {
+        width: 2.5em;
+        height: 2.5rem;
+        color: #ffffffe8;
+      }
 
-        @media (min-width: 600px) {
-          width: 40px;
-        }
+      svg:hover {
+        color: #eb5757;
       }
     }
   }

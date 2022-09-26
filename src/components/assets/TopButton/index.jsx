@@ -30,8 +30,8 @@ const TopButton = () => {
       to="home"
       spy={true}
       smooth={true}
-      duration={500}
-      offset={-66}
+      duration={800}
+      offset={-58}
     >
       <StyledButton
         className={topButtonVisible ? "on" : "off"}

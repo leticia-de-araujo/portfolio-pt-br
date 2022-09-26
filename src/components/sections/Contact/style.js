@@ -47,8 +47,18 @@ export const StyledDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 1rem;
     z-index: 999;
+
+    svg {
+      width: 2em;
+      height: 2rem;
+      color: #ffffffe8;
+    }
+
+    svg:hover {
+      color: #eb5757;
+    }
   }
 `;
