@@ -4,9 +4,8 @@ export const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  padding: 2rem;
+  min-height: calc(100vh - 66px);
+  padding: 3rem 2rem;
   background-color: #070707;
   color: white;
 

@@ -5,7 +5,8 @@ export const HomeMainDiv = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: calc(100vh + 67px);
+  min-height: calc(100vh + 66px);
+  padding: 1rem;
   color: white;
   background: #eb5757; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -21,7 +22,8 @@ export const HomeMainDiv = styled.div`
   padding: 0 1rem 1rem 1rem;
 
   @media (min-width: 720px) {
-    padding: 0 0 1rem 1rem;
+    height: calc(100vh + 66px);
+    padding: 3rem 0 3rem 2rem;
   }
 
   .language {

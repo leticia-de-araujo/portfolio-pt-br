@@ -5,9 +5,8 @@ export const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  padding: 1.5rem;
+  min-height: calc(100vh - 66px);
+  padding: 3rem 2rem;
   background-color: #070707;
   color: white;
   position: relative;
@@ -25,7 +24,7 @@ export const StyledDiv = styled.div`
     justify-content: center;
     gap: 5px;
     align-self: center;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 
     h2 {
       font-size: 1.8rem;

@@ -8,7 +8,6 @@ export const StyledAppBar = muiStyles.styled(AppBar)`
     color: white;
     border-bottom: 2px solid #eb5757;
 
-
     .ul-desktop {
         list-style: none;
         display: flex;
