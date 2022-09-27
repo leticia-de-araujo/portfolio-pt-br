@@ -27,8 +27,8 @@ export const HomeMainDiv = styled.div`
   }
 
   @media (min-width: 720px) {
-    padding: 0rem 0 2rem 2rem;
-    height: calc(100vh - 66px);
+    padding: 2rem 0 2rem 2rem;
+    height: 100vh;
   }
 
   .language {

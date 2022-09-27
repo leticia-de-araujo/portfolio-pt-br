@@ -28,8 +28,8 @@ const About = () => {
                 <span role="img" aria-label="stars">
                   ✨
                 </span>{" "}
-                Sou uma desenvolvedora Back-End e Full-Stack Jr., determinada em
-                aprender um pouco mais a cada dia.
+                Sou uma Desenvolvedora Full-Stack | Front-End | Back-End,
+                determinada em aprender um pouco mais a cada dia.
               </p>
               <p>
                 <span role="img" aria-label="stars">
@@ -42,8 +42,8 @@ const About = () => {
                 <span role="img" aria-label="stars">
                   ✨
                 </span>{" "}
-                Eu estou no último módulo do curso de Desenvolvimento Web
-                Full-Stack de 2000 horas na{" "}
+                Eu estou me especializando em Desenvolvimento Web Full-Stack no
+                curso de 2000 horas na{" "}
                 <a
                   href="https://kenzie.com.br/"
                   target="_blank"
@@ -80,7 +80,7 @@ const About = () => {
                     strings: [
                       "aprender novas tecnologias.",
                       "resolver problemas complexos.",
-                      "arrumar bugs difíceis de resolver.",
+                      "solucionar bugs difíceis de resolver.",
                       "experimentar coisas novas.",
                       "colaborar com outras pessoas.",
                     ],

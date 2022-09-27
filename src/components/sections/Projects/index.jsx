@@ -50,21 +50,25 @@ const Projects = () => {
                     </ul>
                   </section>
                   <section className="project-nav">
-                    <a
-                      href={project.liveDemo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        variant="contained"
-                        size="small"
-                        className={project.id}
-                        style={{ background: project.bgColor }}
+                    {(project.liveDemo || project.BaseUrl) && (
+                      <a
+                        href={
+                          project.liveDemo ? project.liveDemo : project.BaseUrl
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        {" "}
-                        Live Demo{" "}
-                      </Button>
-                    </a>
+                        <Button
+                          variant="contained"
+                          size="small"
+                          className={project.id}
+                          style={{ background: project.bgColor }}
+                        >
+                          {project.liveDemo ? "Live Demo" : "Base URL"}
+                        </Button>
+                      </a>
+                    )}
+
                     <a
                       href={project.gitHub}
                       target="_blank"

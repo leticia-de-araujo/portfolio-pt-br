@@ -52,8 +52,8 @@ export const StyledDiv = styled.div`
     z-index: 999;
 
     svg {
-      width: 2em;
-      height: 2rem;
+      width: 2.5em;
+      height: 2.5rem;
       color: #ffffffe8;
     }
 
