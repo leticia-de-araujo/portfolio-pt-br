@@ -9,8 +9,6 @@ import { StyledAppBar, StyledBox } from "./style";
 import ErrorFallback from "../../errors/ErrorFallback";
 
 const NavBar = () => {
-  const drawerWidth = 240;
-
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -20,9 +18,9 @@ const NavBar = () => {
   const drawer = (
     <StyledBox onClick={handleDrawerToggle}>
       <IconButton
-        color="primary"
+        color="secondary"
         onClick={handleDrawerToggle}
-        sx={{ alignSelf: "flex-end" }}
+        sx={{ alignSelf: "flex-start" }}
       >
         <CloseIcon />
       </IconButton>
@@ -179,6 +177,7 @@ const NavBar = () => {
       </StyledAppBar>
       <Box component="nav">
         <Drawer
+          anchor="top"
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -191,9 +190,8 @@ const NavBar = () => {
             "& .MuiDrawer-paper": {
               bgcolor: " #070707",
               boxSizing: "border-box",
-              width: drawerWidth,
-              maxHeight: "35vh",
-              borderRadius: "0 0 1rem 0",
+              width: "100%",
+              height: "6rem",
             },
           }}
         >
