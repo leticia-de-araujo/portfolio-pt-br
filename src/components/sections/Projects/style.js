@@ -28,7 +28,7 @@ export const StyledDiv = styled.div`
     justify-content: center;
     gap: 5px;
     align-self: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     h2 {
       font-size: 1.8rem;
@@ -49,6 +49,7 @@ export const StyledDiv = styled.div`
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 2rem;
 
     @media screen and (min-width: 600px) {
       flex-direction: row;
@@ -59,7 +60,7 @@ export const StyledDiv = styled.div`
   .project-card {
     height: 100%;
     max-width: 30rem;
-    min-height: 158px;
+    min-height: 100px;
     background-color: #292929;
     display: flex;
     flex-direction: column;

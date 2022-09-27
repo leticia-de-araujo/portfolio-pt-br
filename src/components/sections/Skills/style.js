@@ -6,11 +6,6 @@ export const SkillsDiv = styled.div`
   max-width: 45rem;
   color: white;
 
-  h2 {
-    font-size: 1.5rem;
-    margin: 1.5rem 0;
-  }
-
   .skills-ul {
     position: relative;
     padding-left: 0;
