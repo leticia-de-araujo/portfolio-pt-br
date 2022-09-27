@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: calc(100vh - 58px);
   padding: 2rem;
@@ -27,7 +29,7 @@ export const StyledDiv = styled.div`
     justify-content: center;
     gap: 5px;
     align-self: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     h2 {
       font-size: 1.8rem;
