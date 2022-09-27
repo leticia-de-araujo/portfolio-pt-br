@@ -2,11 +2,10 @@ import { HomeMainDiv } from "./style";
 import { Fade, Bounce } from "react-reveal";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
-import github from "../../../imgs/social/github.png";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import ProfilePic from "../../../imgs/social/profilepic.png";
-import { Button, IconButton, SvgIcon } from "@mui/material";
-import LanguageIcon from "@mui/icons-material/Language";
+import { Button, SvgIcon } from "@mui/material";
+import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
 import projectsBanner from "../../../imgs/projects/projects.png";
 import NavBar from "../../assets/NavBar";
 import Skills from "../Skills";
@@ -17,13 +16,19 @@ const Home = () => {
     <>
       <NavBar />
       <HomeMainDiv className="home">
-        {/* <Fade bottom duration={1000}>
-        <a href="https://portfolio-leticia.vercel.app/" className="language">
-          <IconButton>
-            EN <LanguageIcon sx={{ fontSize: "0.9rem" }} />
-          </IconButton>
-        </a>
-      </Fade> */}
+        <Fade bottom duration={1000}>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="language"
+          >
+            <Button color="secondary" size="small" variant="text">
+              EN
+              <LanguageTwoToneIcon color="secondary" fontSize="small" />
+            </Button>
+          </a>
+        </Fade>
         <div className="home-text-div">
           <Fade bottom duration={1000}>
             <div className="home-text-top-div">
@@ -78,7 +83,7 @@ const Home = () => {
                     duration={800}
                     offset={-58}
                   >
-                    <Button variant="contained">
+                    <Button variant="contained" sx={{ textTransform: "capitalize" }}>
                       Ver projetos
                       <ArrowDropDownCircleIcon
                         fontSize="small"
