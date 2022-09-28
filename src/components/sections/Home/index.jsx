@@ -16,7 +16,7 @@ const Home = () => {
     <>
       <NavBar />
       <HomeMainDiv className="home">
-        <Fade bottom duration={1000}>
+        {/* <Fade bottom duration={1000}>
           <a
             href="#"
             target="_blank"
@@ -28,7 +28,7 @@ const Home = () => {
               <LanguageTwoToneIcon color="secondary" fontSize="small" />
             </Button>
           </a>
-        </Fade>
+        </Fade> */}
         <div className="home-text-div">
           <Fade bottom duration={1000}>
             <div className="home-text-top-div">
