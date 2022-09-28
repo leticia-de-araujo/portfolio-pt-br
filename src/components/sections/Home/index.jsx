@@ -4,21 +4,21 @@ import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import ProfilePic from "../../../imgs/social/profilepic.png";
-import { Button, SvgIcon } from "@mui/material";
-// import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
+import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
 import projectsBanner from "../../../imgs/projects/projects.png";
 import NavBar from "../../assets/NavBar";
 import Skills from "../Skills";
 import { SiGithub } from "react-icons/si";
+import { Button, SvgIcon } from "@mui/material";
 
 const Home = () => {
   return (
     <>
       <NavBar />
       <HomeMainDiv className="home">
-        {/* <Fade bottom duration={1000}>
+        <Fade bottom duration={1000}>
           <a
-            href="#"
+            href="https://portfolio-leticia-en.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="language"
@@ -28,7 +28,7 @@ const Home = () => {
               <LanguageTwoToneIcon color="secondary" fontSize="small" />
             </Button>
           </a>
-        </Fade> */}
+        </Fade>
         <div className="home-text-div">
           <Fade bottom duration={1000}>
             <div className="home-text-top-div">
@@ -83,7 +83,10 @@ const Home = () => {
                     duration={900}
                     offset={-58}
                   >
-                    <Button variant="contained" sx={{ textTransform: "capitalize" }}>
+                    <Button
+                      variant="contained"
+                      sx={{ textTransform: "capitalize" }}
+                    >
                       Ver projetos
                       <ArrowDropDownCircleIcon
                         fontSize="small"

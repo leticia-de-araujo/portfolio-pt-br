@@ -90,11 +90,9 @@ const About = () => {
                 />
               </div>
               <p>
-                Em resumo, eu sou uma Desenvolvedora Web criativa, determinada e
-                esforçada procurando pela minha primeira oportunidade na área
-                tech. Caso você queria{" "}
-                <span className="hire-me">me contratar</span>, ou apenas entrar
-                em contato comigo, você pode me encontrar no{" "}
+                Em resumo, eu sou uma Desenvolvedora Web criativa e dedicada procurando pela minha primeira oportunidade na área
+                tech. Caso você queria entrar
+                em contato comigo, você pode me encontrar pelo{" "}
                 <a
                   href="https://www.linkedin.com/in/leticia-de-araujo-nunes"
                   target="_blank"
