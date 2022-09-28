@@ -1,7 +1,7 @@
 import Burger from "../imgs/3d-icons/Burger_perspective_matte.png";
 import Hub from "../imgs/3d-icons/Hub_perspective_matte.png";
-import LolaShop from "../imgs/3d-icons/LolaShop_cart_perspective_matte.png";
-import OnTrip from "../imgs/3d-icons/OnTrip_perspective_matte.png";
+// import LolaShop from "../imgs/3d-icons/LolaShop_cart_perspective_matte.png";
+// import OnTrip from "../imgs/3d-icons/OnTrip_perspective_matte.png";
 import APIOnTrip from "../imgs/3d-icons/APIOnTrip.png";
 import MetalSul from "../imgs/3d-icons/MetalSul.png";
 import RealEstate from "../imgs/3d-icons/RealEstate.png";

@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import ProfilePic from "../../../imgs/social/profilepic.png";
 import { Button, SvgIcon } from "@mui/material";
-import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
+// import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
 import projectsBanner from "../../../imgs/projects/projects.png";
 import NavBar from "../../assets/NavBar";
 import Skills from "../Skills";
@@ -80,7 +80,7 @@ const Home = () => {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    duration={800}
+                    duration={900}
                     offset={-58}
                   >
                     <Button variant="contained" sx={{ textTransform: "capitalize" }}>

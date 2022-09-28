@@ -1,8 +1,6 @@
 import { Divider, SvgIcon } from "@mui/material";
 import { Bounce, Fade } from "react-reveal";
 import { StyledDiv } from "./style";
-import github from "../../../imgs/social/github.png";
-import linkedin from "../../../imgs/social/linkedin.png";
 import ContactForm from "../../assets/ContactForm";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
@@ -11,10 +9,10 @@ const Contact = () => {
     <StyledDiv className="contact">
       <div className="contact-innerDiv">
         <div className="contact-title">
-          <Fade left duration={1200}>
+          <Fade left duration={1000}>
             <h2>Contato</h2>
           </Fade>
-          <Fade right duration={1200}>
+          <Fade right duration={1000}>
             <Divider className="divider" />
           </Fade>
         </div>
