@@ -28,8 +28,8 @@ const About = () => {
                 <span role="img" aria-label="stars">
                   ✨
                 </span>{" "}
-                Sou uma Desenvolvedora Full-Stack | Front-End | Back-End,
-                determinada em aprender um pouco mais a cada dia.
+                Sou uma Desenvolvedora Full-Stack | Back-End, determinada em
+                aprender um pouco mais a cada dia.
               </p>
               <p>
                 <span role="img" aria-label="stars">
@@ -59,15 +59,9 @@ const About = () => {
                   ✨
                 </span>{" "}
                 Os meus projetos atuais foram construídos em JavaScript,
-                React.js, Node.js/Express e TypeScript.
+                React.js, Node.js (Express), TypeScript e Python (Django).
               </p>
-              <p>
-                <span role="img" aria-label="stars">
-                  ✨
-                </span>{" "}
-                Atualmente, estou estudando Python e Django. Então, irei
-                adicionar projetos também com essas tecnologias aqui em breve.
-              </p>
+
               <div className="typewriter">
                 <p className="typewriter-start">
                   <span role="img" aria-label="stars">
@@ -90,9 +84,10 @@ const About = () => {
                 />
               </div>
               <p>
-                Em resumo, eu sou uma Desenvolvedora Web criativa e dedicada procurando pela minha primeira oportunidade na área
-                tech. Caso você queira entrar
-                em contato comigo, você pode me encontrar pelo{" "}
+                Em resumo, eu sou uma Desenvolvedora Web apaixonada por
+                desenvolver aplicações eficientes, seguras e focadas no usuário.
+                Caso você queira entrar em contato comigo, você pode me
+                encontrar pelo{" "}
                 <a
                   href="https://www.linkedin.com/in/leticia-de-araujo-nunes"
                   target="_blank"

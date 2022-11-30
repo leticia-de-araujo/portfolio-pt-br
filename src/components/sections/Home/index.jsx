@@ -52,7 +52,6 @@ const Home = () => {
                 options={{
                   strings: [
                     "Desenvolvedora Full-Stack",
-                    "Desenvolvedora Front-End",
                     "Desenvolvedora Back-End",
                   ],
                   autoStart: true,
