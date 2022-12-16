@@ -28,7 +28,7 @@ const About = () => {
                 <span role="img" aria-label="stars">
                   ✨
                 </span>{" "}
-                Sou uma Desenvolvedora Full-Stack | Back-End, determinada em
+                Sou uma Desenvolvedora Full-Stack, determinada em
                 aprender um pouco mais a cada dia.
               </p>
               <p>

@@ -16,88 +16,92 @@ import {
   SiPython,
   SiDjango,
   SiNextdotjs,
-} from "react-icons/si";
+  SiCsharp,
+  SiDotnet,
+} from 'react-icons/si';
 
 const skills = [
   {
     id: 0,
-    skillName: "HTML",
+    skillName: 'HTML',
     img: SiHtml5,
   },
   {
     id: 1,
-    skillName: "CSS",
+    skillName: 'CSS',
     img: SiCss3,
   },
   {
     id: 2,
-    skillName: "JavaScript",
+    skillName: 'JavaScript',
     img: SiJavascript,
   },
-  { id: 3, skillName: "React.js", img: SiReact },
+  { id: 3, skillName: 'React.js', img: SiReact },
   {
     id: 4,
-    skillName: "Next.js",
+    skillName: 'Next.js',
     img: SiNextdotjs,
   },
   {
     id: 5,
-    skillName: "Redux",
+    skillName: 'Redux',
     img: SiRedux,
   },
   {
     id: 6,
-    skillName: "Material UI",
+    skillName: 'Material UI',
     img: SiMaterialui,
   },
   {
     id: 7,
-    skillName: "Styled Components",
+    skillName: 'Styled Components',
     img: SiStyledcomponents,
   },
   {
     id: 8,
-    skillName: "TypeScript",
+    skillName: 'TypeScript',
     img: SiTypescript,
   },
   {
     id: 9,
-    skillName: "Node.js",
+    skillName: 'Node.js',
     img: SiNodedotjs,
   },
   {
     id: 10,
-    skillName: "Express",
+    skillName: 'Express',
     img: SiExpress,
   },
   {
     id: 11,
-    skillName: "PostgreSQL",
+    skillName: 'PostgreSQL',
     img: SiPostgresql,
   },
   {
     id: 12,
-    skillName: "Jest",
+    skillName: 'Jest',
     img: SiJest,
   },
   {
     id: 13,
-    skillName: "Python",
+    skillName: 'Python',
     img: SiPython,
   },
   {
     id: 14,
-    skillName: "Django",
+    skillName: 'Django',
     img: SiDjango,
   },
+  { id: 15, skillName: 'C#', img: SiCsharp },
+  { id: 16, skillName: 'ASP.NET', img: SiDotnet },
   {
-    id: 15,
-    skillName: "Docker",
+    id: 17,
+    skillName: 'Docker',
     img: SiDocker,
   },
   {
-    id: 16,
-    skillName: "Git e GitHub",
+    id: 18,
+    skillName: 'Git e GitHub',
     img: SiGit,
   },
 ];

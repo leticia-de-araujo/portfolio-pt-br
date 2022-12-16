@@ -1,47 +1,47 @@
-import { HomeMainDiv } from "./style";
-import { Fade, Bounce } from "react-reveal";
-import { Link } from "react-scroll";
-import Typewriter from "typewriter-effect";
-import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
-import ProfilePic from "../../../imgs/social/profilepic.png";
-import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
-import projectsBanner from "../../../imgs/projects/projects.png";
-import NavBar from "../../assets/NavBar";
-import Skills from "../Skills";
-import { SiGithub } from "react-icons/si";
-import { Button, SvgIcon } from "@mui/material";
+import { HomeMainDiv } from './style';
+import { Fade, Bounce } from 'react-reveal';
+import { Link } from 'react-scroll';
+import Typewriter from 'typewriter-effect';
+import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
+import ProfilePic from '../../../imgs/social/profilepic.png';
+import LanguageTwoToneIcon from '@mui/icons-material/LanguageTwoTone';
+import projectsBanner from '../../../imgs/projects/projects.png';
+import NavBar from '../../assets/NavBar';
+import Skills from '../Skills';
+import { SiGithub } from 'react-icons/si';
+import { Button, SvgIcon } from '@mui/material';
 
 const Home = () => {
   return (
     <>
       <NavBar />
-      <HomeMainDiv className="home">
+      <HomeMainDiv className='home'>
         <Fade bottom duration={1000}>
           <a
-            href="https://portfolio-leticia-en.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="language"
+            href='https://portfolio-leticia-en.vercel.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='language'
           >
-            <Button color="secondary" size="small" variant="text">
+            <Button color='secondary' size='small' variant='text'>
               EN
-              <LanguageTwoToneIcon color="secondary" fontSize="small" />
+              <LanguageTwoToneIcon color='secondary' fontSize='small' />
             </Button>
           </a>
         </Fade>
-        <div className="home-text-div">
+        <div className='home-text-div'>
           <Fade bottom duration={1000}>
-            <div className="home-text-top-div">
+            <div className='home-text-top-div'>
               <Bounce>
-                <img alt="Profile" src={ProfilePic} className="profilePic" />
+                <img alt='Profile' src={ProfilePic} className='profilePic' />
               </Bounce>
 
               <h1>
-                Olá, me chamo <span className="name">Letícia Araújo</span>
+                Olá, me chamo <span className='name'>Letícia Araújo</span>
                 <span
-                  className="wave-emoji"
-                  role="img"
-                  aria-label="waving hand"
+                  className='wave-emoji'
+                  role='img'
+                  aria-label='waving hand'
                 >
                   👋
                 </span>
@@ -50,10 +50,7 @@ const Home = () => {
             <h2>
               <Typewriter
                 options={{
-                  strings: [
-                    "Desenvolvedora Full-Stack",
-                    "Desenvolvedora Back-End",
-                  ],
+                  strings: ['Desenvolvedora Full-Stack'],
                   autoStart: true,
                   loop: true,
                   deleteSpeed: 15,
@@ -61,38 +58,38 @@ const Home = () => {
                 }}
               />
             </h2>
-            <div className="linksAndButtons">
+            <div className='linksAndButtons'>
               <Bounce>
-                <div className="links">
+                <div className='links'>
                   <a
-                    href="https://github.com/leticia-de-araujo"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href='https://github.com/leticia-de-araujo'
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
                     <SvgIcon component={SiGithub} />
                   </a>
                 </div>
 
-                <div className="scroll-down">
+                <div className='scroll-down'>
                   <Link
-                    activeClass="active"
-                    to="projects"
+                    activeClass='active'
+                    to='projects'
                     spy={true}
                     smooth={true}
                     duration={900}
                     offset={-58}
                   >
                     <Button
-                      variant="contained"
-                      sx={{ textTransform: "capitalize" }}
+                      variant='contained'
+                      sx={{ textTransform: 'capitalize' }}
                     >
                       Ver projetos
                       <ArrowDropDownCircleIcon
-                        fontSize="small"
+                        fontSize='small'
                         style={{
-                          pointerEvents: "fill",
-                          cursor: "pointer",
-                          marginLeft: "5px",
+                          pointerEvents: 'fill',
+                          cursor: 'pointer',
+                          marginLeft: '5px',
                         }}
                       />
                     </Button>
@@ -103,8 +100,8 @@ const Home = () => {
           </Fade>
           <Skills />
         </div>
-        <div className="home-banner-div">
-          <img src={projectsBanner} alt="My projects" />
+        <div className='home-banner-div'>
+          <img src={projectsBanner} alt='My projects' />
         </div>
       </HomeMainDiv>
     </>
